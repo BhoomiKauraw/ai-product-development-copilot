@@ -1,0 +1,429 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f5f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  width: min(760px, calc(100% - 32px));
+  margin: 64px auto;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #5d63c9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  margin-bottom: 12px;
+  font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.15;
+}
+
+.subtitle {
+  color: #626b7d;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.status,
+.idea-form {
+  padding: 24px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #e1e5ee;
+  border-radius: 16px;
+}
+
+.status {
+  color: #465168;
+  font-size: 14px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 8px;
+  background: #22a06b;
+  border-radius: 50%;
+}
+
+.idea-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 650;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cfd5e1;
+  border-radius: 10px;
+  font: inherit;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: 2px solid #7378e8;
+  outline-offset: 2px;
+}
+
+.hint {
+  color: #70798a;
+  font-size: 13px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border: 0;
+  border-radius: 10px;
+  background: #555ac7;
+  color: white;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4449b5;
+}
+
+footer {
+  color: #70798a;
+  font-size: 13px;
+  text-align: center;
+}
+.prd-result {
+  padding: 24px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #e1e5ee;
+  border-radius: 16px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.prd-result h2 {
+  font-size: 25px;
+  line-height: 1.3;
+}
+
+.prd-result h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.prd-result li {
+  margin-bottom: 8px;
+}
+
+.error-message {
+  color: #b42318;
+  font-size: 14px;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+.error-message {
+  color: #c62828;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.prd-card,
+.history-section {
+  padding: 24px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #e1e5ee;
+  border-radius: 16px;
+}
+
+.prd-card h2,
+.history-section h2 {
+  margin-top: 8px;
+}
+
+.prd-card h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.prd-card p,
+.prd-card li {
+  line-height: 1.7;
+  color: #465168;
+}
+
+.prd-card li {
+  margin-bottom: 6px;
+}
+
+.history-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.refresh-button {
+  width: auto;
+  margin: 0;
+  padding: 10px 14px;
+}
+
+.history-list {
+  display: grid;
+  gap: 12px;
+}
+
+.history-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+  padding: 16px;
+  background: #f8f9fd;
+  color: #172033;
+  border: 1px solid #e1e5ee;
+  text-align: left;
+}
+
+.history-item:hover {
+  background: #eef0ff;
+}
+
+.history-item span,
+.history-item small {
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-wrap: anywhere;
+}
+
+.history-item small {
+  color: #70798a;
+}
+.rice-section {
+  padding: 24px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #e1e5ee;
+  border-radius: 16px;
+}
+
+.rice-section > h2 {
+  margin-bottom: 8px;
+}
+
+.rice-feature-list {
+  display: grid;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.rice-feature {
+  padding: 16px;
+  background: #f8f9fd;
+  border: 1px solid #e1e5ee;
+  border-radius: 12px;
+}
+
+.rice-feature-heading,
+.rice-result-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.rice-feature-heading h3 {
+  margin-top: 0;
+}
+
+.rice-feature label {
+  display: block;
+  margin: 12px 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rice-feature input {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #cfd5e1;
+  border-radius: 8px;
+  font: inherit;
+  background: white;
+}
+
+.rice-input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 12px;
+}
+
+.secondary-button,
+.remove-button {
+  width: auto;
+  margin: 8px 8px 8px 0;
+  padding: 10px 14px;
+}
+
+.secondary-button {
+  background: #eef0ff;
+  color: #4449b5;
+}
+
+.secondary-button:hover {
+  background: #e1e4ff;
+}
+
+.remove-button {
+  background: #fcebea;
+  color: #a12622;
+}
+
+.remove-button:hover {
+  background: #f8d8d6;
+}
+
+.rice-results {
+  margin-top: 24px;
+}
+
+.rice-result {
+  padding: 16px 0;
+  border-bottom: 1px solid #e1e5ee;
+  overflow-wrap: anywhere;
+}
+
+.rice-result:last-child {
+  border-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .rice-input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rice-feature-heading,
+  .rice-result-heading {
+    align-items: flex-start;
+  }
+}
+/* Fix: make all input text clearly visible */
+.rice-section input,
+.rice-section textarea,
+.rice-section select {
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827;
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  font-size: 15px;
+}
+
+/* Make placeholder text visible but distinguishable */
+.rice-section input::placeholder,
+.rice-section textarea::placeholder {
+  color: #6b7280 !important;
+  -webkit-text-fill-color: #6b7280;
+  opacity: 1;
+}
+
+/* Make the Feature Prioritization heading dark and bold */
+.rice-section h2 {
+  color: #111827 !important;
+  font-size: 28px;
+  font-weight: 700;
+  opacity: 1 !important;
+}
+
+/* Improve visibility of feature headings and labels */
+.rice-feature-heading h3,
+.rice-results h3,
+.rice-feature label {
+  color: #1f2937 !important;
+  font-weight: 700;
+  opacity: 1 !important;
+}
+
+/* Ensure explanatory text is readable */
+.rice-section .subtitle,
+.rice-section .hint {
+  color: #4b5563 !important;
+  opacity: 1 !important;
+}
+
+/* Make typed text stay dark while the input is focused */
+.rice-section input:focus {
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827;
+  border-color: #4f46e5;
+  outline: 2px solid #c7d2fe;
+  outline-offset: 1px;
+}
+/* Fix: PRD History heading */
+.history-section h2,
+.history-section h3 {
+  color: #111827 !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+/* Fix: Generated Product Plan heading */
+h1,
+h2,
+h3 {
+  color: #111827;
+  opacity: 1;
+}
+
+/* Make the generated PRD title prominent */
+.prd-section h2,
+.prd-section h3,
+.prd-content h2,
+.prd-content h3 {
+  color: #111827 !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+/* Make history item titles readable */
+.history-section button,
+.history-section p,
+.history-section strong {
+  color: #1f2937;
+  opacity: 1;
+}
